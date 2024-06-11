@@ -4,13 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
+    <div class="container">
+        <header>
+            <div class="weather-wrapper">
+                <img class="weather-icon" src="https://static.vecteezy.com/system/resources/previews/024/825/197/non_2x/3d-weather-icon-day-with-snow-free-png.png" alt="weathe icon">
+                <h1>Weather</h1>
+            </div>
+            <form  class="search-form">
+                <input id="search-input" type="text" placeholder="Search any city">
+                <button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <div style="display: flex;align-items: center; gap: 30px;">
+                    <a class="auth" href="./pages/register.html">SignUp</a>
+                     <a  class="auth"href="./pages/login.html">LoginUp</a>
+            </div>
+            <div class="toggle">
+                <input id="theme" type="checkbox">
+                <label for="theme">
+                    <i class="bi bi-brightness-high-fill"></i>
+                    <i class="bi bi-moon-fill"></i>
+                </label>
+            </div>
+        </header>
 
-    <a href="./pages/register.html">Register</a>
+    </div>
+    <section id="hero">
+        <div class="hero-wrapper">
+            <div class="content">
+                    <div class="hero-content__left">
+                        <img src="" alt="" id="weather-status-icon">
+                        <h2 id="weather-gradus"></h2>
+                        <p id="weather-location"></p>
+                    </div>
+                    <div class="hero-content__right">
+                        <h3 id="time"></h3>
+                        <p id="weekday"></p>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <section id="intro">
+        <div class="intro-first">
+            <div class="left">
+                <div class="hummidtly-wrap">
+                    <div>
+                        <img style="width: 70px; height: 100px;" src="https://www.pngitem.com/pimgs/m/59-594538_water-drop-pink-png-transparent-png.png" alt="hummidtly">
+                    </div>
+                    <ul>
+                        <li>Humidity</li>
+                        <li id="hummidtly">27%</li>
+                    </ul>
+                </div>
+                <div class="hummidtly-wrap">
+                    <div>
+                        <img style="width: 70px; height: 70px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-En05hzwpcLC7H2nzb65RrabCWbjRsFA_pA&s" alt="hummidtly">
+                    </div>
+                    <ul>
+                        <li>UV index</li>
+                        <li id="uv-index">27%</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="rigth">
+                <div class="hummidtly-wrap">
+                    <div>
+                        <img style="width: 70px; height: 100px;" src="https://cdn-icons-png.freepik.com/512/11129/11129162.png" alt="hummidtly">
+                    </div>
+                    <ul>
+                        <li>Sunset</li>
+                        <li id="sunset">27%</li>
+                    </ul>
+                </div>
+                <div class="hummidtly-wrap">
+                    <div>
+                        <img style="width: 70px; height: 70px;" src="https://cdn-icons-png.flaticon.com/512/514/514349.png" alt="hummidtly">
+                    </div>
+                    <ul>
+                        <li>Sunrise</li>
+                        <li id="sunrice">27%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="intro-second">
+            <div class="circle-first">
+                <strong id="pascal"></strong>
+                <img style="width: 230px; height: 230px;" src="./images/circle.jpg" alt="">
+            </div>
+            <div class="circle-second">
+                <img style="width: 230px; height: 230px;" src="https://png.pngtree.com/png-clipart/20220705/ourlarge/pngtree-compass-icon-vector-transparent-png-image_5686571.png" alt="">
+            </div>
+        </div>
+    </section>
+
+       <!-- <a href="./pages/register.html">Register</a>
     <br><br>
-    <a href="./pages/login.html">Login</a>
+    <a href="./pages/login.html">Login</a> -->
 
 
     <script src="./script/app.js"></script>
